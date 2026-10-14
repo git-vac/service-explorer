@@ -1,0 +1,11 @@
+{
+  "id": "101",
+  "subject": "Welcome to the lab",
+  "from": "admin@lab.test",
+  "date": "Wed, 14 Oct 2026 12:00:00 +0200",
+  "bytes": 285,
+  "sha256": "0cebe28de35a861254b40e38260b042927b0e4c0b1ce26ba2f746106b8463efc",
+  "raw_path": "alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.eml",
+  "text_path": "alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.txt",
+  "attachments": []
+}

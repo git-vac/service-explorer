@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'"><title>DNS Explorer — synthetic demo</title><style>body{background:#0b1220;color:#e5edf8;font:16px/1.6 system-ui;margin:0}main{max-width:1150px;margin:auto;padding:36px 24px}h1{font-size:34px}h2{font-size:22px}h3{font-size:18px}small,p{color:#a8b8cc}article,details{background:#142036;border:1px solid #2b3a53;border-radius:12px;padding:20px;margin:18px 0}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px;border-bottom:1px solid #2b3a53}a{color:#7dd3fc}.warning{color:#fbbf24}.scroll{overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer;color:#67e8c1}</style></head><body><main><p>SERVICE EXPLORER · LOCAL LAB REVIEW</p><h1>DNS Explorer — synthetic demo</h1><p class="warning">Synthetic demo. No DNS server was contacted.</p><article><h2>lab.test. · A</h2><p>NOERROR · UDP · QR AA</p><p>Synthetic record</p><div class="scroll"><table><thead><tr><th>Section</th><th>Name</th><th>TTL</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>answer</td><td>lab.test.</td><td>300</td><td>A</td><td>192.0.2.10</td></tr></tbody></table></div></article><article><h2>lab.test. · MX</h2><p>NOERROR · UDP · QR AA</p><p>Synthetic record</p><div class="scroll"><table><thead><tr><th>Section</th><th>Name</th><th>TTL</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>answer</td><td>lab.test.</td><td>300</td><td>MX</td><td>10 mail.lab.test.</td></tr></tbody></table></div></article><article><h2>lab.test. · NS</h2><p>NOERROR · UDP · QR AA</p><p>Synthetic record</p><div class="scroll"><table><thead><tr><th>Section</th><th>Name</th><th>TTL</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>answer</td><td>lab.test.</td><td>300</td><td>NS</td><td>ns.lab.test.</td></tr></tbody></table></div></article><article><h2>lab.test. · TXT</h2><p>NOERROR · UDP · QR AA</p><p>Synthetic record</p><div class="scroll"><table><thead><tr><th>Section</th><th>Name</th><th>TTL</th><th>Type</th><th>Value</th></tr></thead><tbody><tr><td>answer</td><td>lab.test.</td><td>300</td><td>TXT</td><td>&quot;Synthetic lab zone&quot;</td></tr></tbody></table></div></article><article><h2>lab.test. · AAAA</h2><p>NOERROR · UDP · QR AA</p><p>Empty answer is preserved explicitly.</p><div class="scroll"><table><thead><tr><th>Section</th><th>Name</th><th>TTL</th><th>Type</th><th>Value</th></tr></thead><tbody></tbody></table></div></article><details><summary>Full collected metadata</summary><pre>{
+  &quot;title&quot;: &quot;DNS Explorer — synthetic demo&quot;,
+  &quot;server&quot;: &quot;192.0.2.53&quot;,
+  &quot;port&quot;: 53,
+  &quot;recursive&quot;: false,
+  &quot;warnings&quot;: [
+    &quot;Synthetic demo. No DNS server was contacted.&quot;
+  ],
+  &quot;queries&quot;: [
+    {
+      &quot;name&quot;: &quot;lab.test.&quot;,
+      &quot;type&quot;: &quot;A&quot;,
+      &quot;status&quot;: &quot;NOERROR&quot;,
+      &quot;flags&quot;: &quot;QR AA&quot;,
+      &quot;transport&quot;: &quot;UDP&quot;,
+      &quot;elapsed_ms&quot;: 1,
+      &quot;detail&quot;: &quot;Synthetic record&quot;,
+      &quot;records&quot;: [
+        {
+          &quot;section&quot;: &quot;answer&quot;,
+          &quot;name&quot;: &quot;lab.test.&quot;,
+          &quot;ttl&quot;: 300,
+          &quot;type&quot;: &quot;A&quot;,
+          &quot;value&quot;: &quot;192.0.2.10&quot;
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;lab.test.&quot;,
+      &quot;type&quot;: &quot;MX&quot;,
+      &quot;status&quot;: &quot;NOERROR&quot;,
+      &quot;flags&quot;: &quot;QR AA&quot;,
+      &quot;transport&quot;: &quot;UDP&quot;,
+      &quot;elapsed_ms&quot;: 1,
+      &quot;detail&quot;: &quot;Synthetic record&quot;,
+      &quot;records&quot;: [
+        {
+          &quot;section&quot;: &quot;answer&quot;,
+          &quot;name&quot;: &quot;lab.test.&quot;,
+          &quot;ttl&quot;: 300,
+          &quot;type&quot;: &quot;MX&quot;,
+          &quot;value&quot;: &quot;10 mail.lab.test.&quot;
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;lab.test.&quot;,
+      &quot;type&quot;: &quot;NS&quot;,
+      &quot;status&quot;: &quot;NOERROR&quot;,
+      &quot;flags&quot;: &quot;QR AA&quot;,
+      &quot;transport&quot;: &quot;UDP&quot;,
+      &quot;elapsed_ms&quot;: 1,
+      &quot;detail&quot;: &quot;Synthetic record&quot;,
+      &quot;records&quot;: [
+        {
+          &quot;section&quot;: &quot;answer&quot;,
+          &quot;name&quot;: &quot;lab.test.&quot;,
+          &quot;ttl&quot;: 300,
+          &quot;type&quot;: &quot;NS&quot;,
+          &quot;value&quot;: &quot;ns.lab.test.&quot;
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;lab.test.&quot;,
+      &quot;type&quot;: &quot;TXT&quot;,
+      &quot;status&quot;: &quot;NOERROR&quot;,
+      &quot;flags&quot;: &quot;QR AA&quot;,
+      &quot;transport&quot;: &quot;UDP&quot;,
+      &quot;elapsed_ms&quot;: 1,
+      &quot;detail&quot;: &quot;Synthetic record&quot;,
+      &quot;records&quot;: [
+        {
+          &quot;section&quot;: &quot;answer&quot;,
+          &quot;name&quot;: &quot;lab.test.&quot;,
+          &quot;ttl&quot;: 300,
+          &quot;type&quot;: &quot;TXT&quot;,
+          &quot;value&quot;: &quot;\&quot;Synthetic lab zone\&quot;&quot;
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;lab.test.&quot;,
+      &quot;type&quot;: &quot;AAAA&quot;,
+      &quot;status&quot;: &quot;NOERROR&quot;,
+      &quot;flags&quot;: &quot;QR AA&quot;,
+      &quot;transport&quot;: &quot;UDP&quot;,
+      &quot;elapsed_ms&quot;: 1,
+      &quot;detail&quot;: &quot;Empty answer is preserved explicitly.&quot;,
+      &quot;records&quot;: []
+    }
+  ],
+  &quot;complete&quot;: true
+}</pre></details></main></body></html>

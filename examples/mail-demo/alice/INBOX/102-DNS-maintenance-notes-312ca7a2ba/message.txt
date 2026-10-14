@@ -1,0 +1,6 @@
+Subject: DNS maintenance notes
+From: admin@lab.test
+Date: Wed, 14 Oct 2026 12:00:00 +0200
+
+This is invented training mail.
+The lab DNS server has a maintenance window tomorrow.

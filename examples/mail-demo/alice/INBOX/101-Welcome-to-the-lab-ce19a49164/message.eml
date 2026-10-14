@@ -1,0 +1,10 @@
+Subject: Welcome to the lab
+From: admin@lab.test
+To: alice@lab.test
+Date: Wed, 14 Oct 2026 12:00:00 +0200
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+This is invented training mail.
+The lab DNS server has a maintenance window tomorrow.

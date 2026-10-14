@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "service-explorer"
+version = "0.1.0"
+description = "Readable DNS investigations and IMAP/POP3 mailbox trees for local labs."
+requires-python = ">=3.10"
+dependencies = ["rich>=13.7,<16", "dnspython>=2.6,<3"]
+license = "MIT"
+
+[project.scripts]
+service-explorer = "service_explorer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

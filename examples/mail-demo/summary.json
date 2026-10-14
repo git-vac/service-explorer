@@ -1,0 +1,72 @@
+{
+  "title": "Mailbox Explorer \u2014 synthetic demo",
+  "accounts": [
+    {
+      "host": "mail.lab.test",
+      "username": "alice",
+      "protocol": "imap",
+      "security": "tls",
+      "complete": true,
+      "mailboxes": [
+        {
+          "name": "INBOX",
+          "total": 2,
+          "messages": [
+            {
+              "id": "101",
+              "subject": "Welcome to the lab",
+              "from": "admin@lab.test",
+              "date": "Wed, 14 Oct 2026 12:00:00 +0200",
+              "bytes": 285,
+              "sha256": "0cebe28de35a861254b40e38260b042927b0e4c0b1ce26ba2f746106b8463efc",
+              "raw_path": "alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.eml",
+              "text_path": "alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.txt",
+              "attachments": []
+            },
+            {
+              "id": "102",
+              "subject": "DNS maintenance notes",
+              "from": "admin@lab.test",
+              "date": "Wed, 14 Oct 2026 12:00:00 +0200",
+              "bytes": 694,
+              "sha256": "927e617aa772f430effeed13c8bd55931a7a4565982f457326bca6432f4f3657",
+              "raw_path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.eml",
+              "text_path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.txt",
+              "attachments": [
+                {
+                  "original_name": "lab-notes.txt",
+                  "path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/attachments/2-lab-notes-txt-767d535d14.txt"
+                }
+              ]
+            }
+          ],
+          "warnings": [],
+          "uidvalidity": "1"
+        },
+        {
+          "name": "Archive",
+          "total": 1,
+          "messages": [
+            {
+              "id": "101",
+              "subject": "Last week's test",
+              "from": "admin@lab.test",
+              "date": "Wed, 14 Oct 2026 12:00:00 +0200",
+              "bytes": 283,
+              "sha256": "7a368024a200e305cda6f479d763a88d1c0a4620a47cc567fb2fa4b7ef4b3a89",
+              "raw_path": "alice/Archive/101-Last-week-s-test-67bc421c16/message.eml",
+              "text_path": "alice/Archive/101-Last-week-s-test-67bc421c16/message.txt",
+              "attachments": []
+            }
+          ],
+          "warnings": [],
+          "uidvalidity": "1"
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "warnings": [
+    "Synthetic demo. No server was contacted and no credentials were used."
+  ]
+}
