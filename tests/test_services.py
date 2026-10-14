@@ -23,7 +23,7 @@ from service_explorer.output import webpage
 def message():
     msg = EmailMessage()
     msg["Subject"] = "<script>bad</script> ../ welcome"
-    msg["From"] = "training@lab.test"
+    msg["From"] = "training@example.test"
     msg.set_content("Synthetic body. No real account.\n")
     msg.add_attachment(b"Synthetic attachment", maintype="text", subtype="plain", filename="../../escape.txt")
     return msg.as_bytes().replace(b"\n", b"\r\n")
@@ -132,7 +132,7 @@ class MailTests(unittest.TestCase):
 
     def test_plaintext_passwords_refused_and_export_not_overwritten(self):
         with self.assertRaises(ValueError):
-            mail.validate({"host": "lab.test", "protocol": "imap", "username": "alice", "password": "secret"})
+            mail.validate({"host": "example.test", "protocol": "imap", "username": "alice", "password": "secret"})
         with tempfile.TemporaryDirectory() as tmp:
             destination = Path(tmp) / "tree"
             demo.mail_demo(destination)
@@ -145,7 +145,7 @@ class MailTests(unittest.TestCase):
         fake = unittest.mock.Mock()
         fake.capabilities = ("IMAP4rev1", "STARTTLS")
         fake.starttls.side_effect = ssl.SSLError("synthetic TLS refusal")
-        account = {"host": "lab.test", "protocol": "imap", "security": "starttls"}
+        account = {"host": "example.test", "protocol": "imap", "security": "starttls"}
         with patch("service_explorer.mail.IMAP", return_value=fake):
             with self.assertRaises(ssl.SSLError):
                 mail.connect(account)
@@ -171,7 +171,7 @@ class MailTests(unittest.TestCase):
             self.assertNotIn("HIDDEN_STYLE", text)
 
     def test_failed_account_visible_and_error_not_echoed(self):
-        config = {"host": "lab.test", "protocol": "imap", "username": "alice", "password_env": "TEST_PASSWORD"}
+        config = {"host": "example.test", "protocol": "imap", "username": "alice", "password_env": "TEST_PASSWORD"}
         with tempfile.TemporaryDirectory() as tmp, patch.dict(os.environ, TEST_PASSWORD="private"), \
                 patch("service_explorer.mail.connect", side_effect=imaplib_error("private credential echo")):
             report = mail.export_accounts([config], Path(tmp) / "out")
@@ -194,7 +194,7 @@ def dns_answer(wire, tcp=False):
     elif kind == "AAAA":
         response.set_rcode(dns.rcode.NXDOMAIN)
     else:
-        data = "10 mail.lab.test." if kind == "MX" else "192.0.2.10"
+        data = "10 mail.example.test." if kind == "MX" else "192.0.2.10"
         response.answer.append(dns.rrset.from_text(query.question[0].name.to_text(), 300, "IN", kind, data))
     return response.to_wire()
 
@@ -220,7 +220,7 @@ class DNSTests(unittest.TestCase):
                 for thread in threads:
                     thread.start()
                 try:
-                    report = dns_probe.probe("127.0.0.1", "lab.test", ["A", "MX", "AAAA"], udp.server_address[1])
+                    report = dns_probe.probe("127.0.0.1", "example.test", ["A", "MX", "AAAA"], udp.server_address[1])
                     self.assertTrue(report["complete"])
                     self.assertEqual(report["queries"][0]["records"][0]["value"], "192.0.2.10")
                     self.assertIn("TCP", report["queries"][1]["transport"])
@@ -233,17 +233,17 @@ class DNSTests(unittest.TestCase):
 
     def test_failure_not_reported_as_absence_and_target_validation(self):
         with patch("service_explorer.dns_probe.ask", side_effect=dns.exception.Timeout):
-            report = dns_probe.probe("127.0.0.1", "lab.test", ["A"])
+            report = dns_probe.probe("127.0.0.1", "example.test", ["A"])
         self.assertFalse(report["complete"])
         self.assertIn("Error", report["queries"][0]["status"])
         with self.assertRaises(ValueError):
-            dns_probe.probe("system-resolver.example", "lab.test", ["A"])
+            dns_probe.probe("system-resolver.example", "example.test", ["A"])
         with self.assertRaises(ValueError):
-            dns_probe.probe("127.0.0.1", "lab.test", ["INVALID"])
+            dns_probe.probe("127.0.0.1", "example.test", ["INVALID"])
 
     def test_wildcard_controls(self):
         with patch("service_explorer.dns_probe.ask", return_value={"records": [{"section": "answer", "type": "A"}]}):
-            report = dns_probe.probe("127.0.0.1", "lab.test", ["A"], wildcard=True)
+            report = dns_probe.probe("127.0.0.1", "example.test", ["A"], wildcard=True)
         self.assertTrue(report["warnings"])
 
     def test_html_escapes_server_data(self):

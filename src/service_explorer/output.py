@@ -105,6 +105,6 @@ def webpage(report):
         '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; base-uri \'none\'">' \
         '<title>' + e(report["title"]) + '</title><style>' \
         'body{background:#0b1220;color:#e5edf8;font:16px/1.6 system-ui;margin:0}main{max-width:1150px;margin:auto;padding:36px 24px}h1{font-size:34px}h2{font-size:22px}h3{font-size:18px}small,p{color:#a8b8cc}article,details{background:#142036;border:1px solid #2b3a53;border-radius:12px;padding:20px;margin:18px 0}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px;border-bottom:1px solid #2b3a53}a{color:#7dd3fc}.warning{color:#fbbf24}.scroll{overflow:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere}summary{cursor:pointer;color:#67e8c1}' \
-        '</style></head><body><main><p>SERVICE EXPLORER · LOCAL LAB REVIEW</p><h1>' + e(report["title"]) + '</h1>' \
+        '</style></head><body><main><p>SERVICE EXPLORER · SERVICE REPORT</p><h1>' + e(report["title"]) + '</h1>' \
         + "".join(f'<p class="warning">{e(w)}</p>' for w in report.get("warnings", [])) + "".join(sections) \
         + '</main></body></html>'

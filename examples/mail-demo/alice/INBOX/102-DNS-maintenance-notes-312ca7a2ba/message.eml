@@ -1,23 +1,23 @@
 Subject: DNS maintenance notes
-From: admin@lab.test
-To: alice@lab.test
+From: admin@example.test
+To: alice@example.test
 Date: Wed, 14 Oct 2026 12:00:00 +0200
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============0193425488657964616=="
+Content-Type: multipart/mixed; boundary="===============6911575630839264122=="
 
---===============0193425488657964616==
+--===============6911575630839264122==
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: 7bit
 
-This is invented training mail.
-The lab DNS server has a maintenance window tomorrow.
+This is invented example mail.
+The example DNS server has a maintenance window tomorrow.
 
---===============0193425488657964616==
+--===============6911575630839264122==
 Content-Type: text/plain
 Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="lab-notes.txt"
+Content-Disposition: attachment; filename="example-notes.txt"
 MIME-Version: 1.0
 
-U3ludGhldGljIGxhYiBhdHRhY2htZW50OyBubyByZWFsIGluZnJhc3RydWN0dXJlLgo=
+U3ludGhldGljIGV4YW1wbGUgYXR0YWNobWVudDsgbm8gcmVhbCBpbmZyYXN0cnVjdHVyZS4K
 
---===============0193425488657964616==--
+--===============6911575630839264122==--

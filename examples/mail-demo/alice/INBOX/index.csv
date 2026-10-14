@@ -1,3 +1,3 @@
 id,subject,from,date,bytes,text_path
-101,Welcome to the lab,admin@lab.test,"Wed, 14 Oct 2026 12:00:00 +0200",285,alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.txt
-102,DNS maintenance notes,admin@lab.test,"Wed, 14 Oct 2026 12:00:00 +0200",694,alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.txt
+101,Welcome to your mailbox,admin@example.test,"Wed, 14 Oct 2026 12:00:00 +0200",301,alice/INBOX/101-Welcome-to-your-mailbox-a28599ae74/message.txt
+102,DNS maintenance notes,admin@example.test,"Wed, 14 Oct 2026 12:00:00 +0200",713,alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.txt

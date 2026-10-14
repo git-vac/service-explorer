@@ -1,0 +1,11 @@
+{
+  "id": "101",
+  "subject": "Welcome to your mailbox",
+  "from": "admin@example.test",
+  "date": "Wed, 14 Oct 2026 12:00:00 +0200",
+  "bytes": 301,
+  "sha256": "7690a6b63801fb901d406c95a1ad20af223b1d37ce197aea0962040e82eb0e27",
+  "raw_path": "alice/INBOX/101-Welcome-to-your-mailbox-a28599ae74/message.eml",
+  "text_path": "alice/INBOX/101-Welcome-to-your-mailbox-a28599ae74/message.txt",
+  "attachments": []
+}

@@ -1,18 +1,18 @@
 [
   {
-    "host": "mail.lab.test",
+    "host": "mail.example.test",
     "port": 993,
     "protocol": "imap",
     "security": "tls",
     "username": "alice",
-    "password_env": "LAB_ALICE_PASSWORD"
+    "password_env": "MAIL_ALICE_PASSWORD"
   },
   {
-    "host": "mail.lab.test",
+    "host": "mail.example.test",
     "port": 995,
     "protocol": "pop3",
     "security": "tls",
     "username": "bob",
-    "password_env": "LAB_BOB_PASSWORD"
+    "password_env": "MAIL_BOB_PASSWORD"
   }
 ]

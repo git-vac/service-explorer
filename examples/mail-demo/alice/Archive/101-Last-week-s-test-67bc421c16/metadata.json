@@ -1,10 +1,10 @@
 {
   "id": "101",
   "subject": "Last week's test",
-  "from": "admin@lab.test",
+  "from": "admin@example.test",
   "date": "Wed, 14 Oct 2026 12:00:00 +0200",
-  "bytes": 283,
-  "sha256": "7a368024a200e305cda6f479d763a88d1c0a4620a47cc567fb2fa4b7ef4b3a89",
+  "bytes": 294,
+  "sha256": "acaabb66280cc765af91e7d114516f6ad3a051d938b64f351d4b61356f7ddbe7",
   "raw_path": "alice/Archive/101-Last-week-s-test-67bc421c16/message.eml",
   "text_path": "alice/Archive/101-Last-week-s-test-67bc421c16/message.txt",
   "attachments": []

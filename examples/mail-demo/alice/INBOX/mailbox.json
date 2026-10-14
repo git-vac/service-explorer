@@ -4,28 +4,28 @@
   "messages": [
     {
       "id": "101",
-      "subject": "Welcome to the lab",
-      "from": "admin@lab.test",
+      "subject": "Welcome to your mailbox",
+      "from": "admin@example.test",
       "date": "Wed, 14 Oct 2026 12:00:00 +0200",
-      "bytes": 285,
-      "sha256": "0cebe28de35a861254b40e38260b042927b0e4c0b1ce26ba2f746106b8463efc",
-      "raw_path": "alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.eml",
-      "text_path": "alice/INBOX/101-Welcome-to-the-lab-ce19a49164/message.txt",
+      "bytes": 301,
+      "sha256": "7690a6b63801fb901d406c95a1ad20af223b1d37ce197aea0962040e82eb0e27",
+      "raw_path": "alice/INBOX/101-Welcome-to-your-mailbox-a28599ae74/message.eml",
+      "text_path": "alice/INBOX/101-Welcome-to-your-mailbox-a28599ae74/message.txt",
       "attachments": []
     },
     {
       "id": "102",
       "subject": "DNS maintenance notes",
-      "from": "admin@lab.test",
+      "from": "admin@example.test",
       "date": "Wed, 14 Oct 2026 12:00:00 +0200",
-      "bytes": 694,
-      "sha256": "927e617aa772f430effeed13c8bd55931a7a4565982f457326bca6432f4f3657",
+      "bytes": 713,
+      "sha256": "501a628f8754c4b8e77d623b7f96c03c0b8da99806ef6615f7acdc9f6be1eb93",
       "raw_path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.eml",
       "text_path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.txt",
       "attachments": [
         {
-          "original_name": "lab-notes.txt",
-          "path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/attachments/2-lab-notes-txt-767d535d14.txt"
+          "original_name": "example-notes.txt",
+          "path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/attachments/2-example-notes-txt-6f35c8aa3b.txt"
         }
       ]
     }

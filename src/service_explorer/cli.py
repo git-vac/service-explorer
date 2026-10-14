@@ -14,7 +14,7 @@ from .output import new_file, terminal, webpage
 def main(argv=None):
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-    parser = argparse.ArgumentParser(description="Readable mail and DNS lab investigations.")
+    parser = argparse.ArgumentParser(description="Readable mail and DNS investigations.")
     parser.add_argument("--no-color", action="store_true")
     sub = parser.add_subparsers(dest="service", required=True)
     mail_parser = sub.add_parser("mail")
@@ -26,7 +26,7 @@ def main(argv=None):
     inspect.add_argument("--port", type=int)
     inspect.add_argument("--timeout", type=float, default=10)
     inspect.add_argument("--ca-file")
-    inspect.add_argument("--insecure", action="store_true", help="Explicitly disable certificate verification for a lab")
+    inspect.add_argument("--insecure", action="store_true", help="Explicitly disable certificate verification")
     inspect.add_argument("--html")
     inspect.add_argument("--json")
     export = mail_sub.add_parser("export", help="Export explicitly supplied account mail into a new local tree")

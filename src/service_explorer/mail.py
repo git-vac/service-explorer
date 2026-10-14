@@ -191,7 +191,7 @@ def inspect(account):
 def transport_warnings(account):
     warnings = []
     if account.get("insecure"):
-        warnings.append("Certificate verification explicitly disabled for this lab connection.")
+        warnings.append("Certificate verification explicitly disabled for this connection.")
     if account.get("security") == "plain":
         warnings.append("Plaintext transport explicitly selected; network traffic is unencrypted.")
     return warnings

@@ -1,2 +1,2 @@
 id,subject,from,date,bytes,text_path
-101,Last week's test,admin@lab.test,"Wed, 14 Oct 2026 12:00:00 +0200",283,alice/Archive/101-Last-week-s-test-67bc421c16/message.txt
+101,Last week's test,admin@example.test,"Wed, 14 Oct 2026 12:00:00 +0200",294,alice/Archive/101-Last-week-s-test-67bc421c16/message.txt

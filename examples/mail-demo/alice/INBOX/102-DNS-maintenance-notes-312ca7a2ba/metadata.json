@@ -1,16 +1,16 @@
 {
   "id": "102",
   "subject": "DNS maintenance notes",
-  "from": "admin@lab.test",
+  "from": "admin@example.test",
   "date": "Wed, 14 Oct 2026 12:00:00 +0200",
-  "bytes": 694,
-  "sha256": "927e617aa772f430effeed13c8bd55931a7a4565982f457326bca6432f4f3657",
+  "bytes": 713,
+  "sha256": "501a628f8754c4b8e77d623b7f96c03c0b8da99806ef6615f7acdc9f6be1eb93",
   "raw_path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.eml",
   "text_path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/message.txt",
   "attachments": [
     {
-      "original_name": "lab-notes.txt",
-      "path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/attachments/2-lab-notes-txt-767d535d14.txt"
+      "original_name": "example-notes.txt",
+      "path": "alice/INBOX/102-DNS-maintenance-notes-312ca7a2ba/attachments/2-example-notes-txt-6f35c8aa3b.txt"
     }
   ]
 }
